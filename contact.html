@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Lesley Okoro">
+  <meta name="description" content="contact page for a Peachy Den Resort.">
+  <title>Peachy Den Resort</title>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peachy Den Resort | Contact</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="icon" type="image/png" href="mountain.png">
+
+<body class="contact">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Peachy Den Resort | Contact</h1>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Image -->
+        <section class="hero">
+            <img src="images/swiss-valley.jpg" alt="Stunning view of resort " width="1440" height="560">
+        </section>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Choose Layout 1 -->
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us! Required fields are marked with a *</p>
+
+            <!-- Image for Layout 1 -->
+            <img src="images/swiss-peak.jpg" alt="Beautiful view of the Swiss Peak" width="350" height="455">
+
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="post">
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="contact-method">Preferred Contact Method *</label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+
+                <label for="comments">Comments *</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Swiss Retreat Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+
+</body>
+
+</html>
